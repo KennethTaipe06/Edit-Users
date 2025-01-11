@@ -52,16 +52,28 @@ router.put('/:id', async (req, res) => {
 
   try {
     const redisClient = req.redisClient;
+    const logger = req.logger;
     redisClient.get(id, async (err, result) => {
-      if (err) return res.status(500).send(err.message);
-      if (result !== token) return res.status(404).send('Invalid token');
+      if (err) {
+        logger.error('Redis error', err);
+        return res.status(500).send(err.message);
+      }
+      if (result !== token) {
+        logger.warn(`Invalid token for user ID: ${id}`);
+        return res.status(404).json({ message: 'Invalid token' });
+      }
 
       const user = await User.findByIdAndUpdate(id, { username, email, firstName, lastName, address, phone }, { new: true });
-      if (!user) return res.status(404).send('User not found');
-      res.send('Usuario actualizado correctamente');
+      if (!user) {
+        logger.warn(`User not found: ${id}`);
+        return res.status(404).json({ message: 'User not found' });
+      }
+      logger.info(`User updated: ${id}`);
+      res.json({ message: 'Usuario actualizado correctamente' });
     });
   } catch (error) {
-    res.status(500).send(error.message);
+    req.logger.error('Error updating user', error);
+    res.status(500).json({ message: error.message });
   }
 });
 
