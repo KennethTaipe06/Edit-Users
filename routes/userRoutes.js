@@ -1,6 +1,11 @@
 const express = require('express');
 const User = require('../models/user');
+const multer = require('multer');
 const router = express.Router();
+
+// Configuración de multer para la carga de archivos en memoria
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
 
 /**
  * @swagger
@@ -23,7 +28,7 @@ const router = express.Router();
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             properties:
@@ -39,13 +44,16 @@ const router = express.Router();
  *                 type: string
  *               phone:
  *                 type: string
+ *               image:
+ *                 type: string
+ *                 format: binary
  *     responses:
  *       200:
  *         description: User updated successfully
  *       404:
  *         description: User not found
  */
-router.put('/:id', async (req, res) => {
+router.put('/:id', upload.single('image'), async (req, res) => {
   const { id } = req.params;
   const { token } = req.query;
   const { username, email, firstName, lastName, address, phone } = req.body;
@@ -63,7 +71,15 @@ router.put('/:id', async (req, res) => {
         return res.status(404).json({ message: 'Invalid token' });
       }
 
-      const user = await User.findByIdAndUpdate(id, { username, email, firstName, lastName, address, phone }, { new: true });
+      const updateData = { username, email, firstName, lastName, address, phone };
+      if (req.file) {
+        updateData.image = {
+          data: req.file.buffer,
+          contentType: req.file.mimetype
+        };
+      }
+
+      const user = await User.findByIdAndUpdate(id, updateData, { new: true });
       if (!user) {
         logger.warn(`User not found: ${id}`);
         return res.status(404).json({ message: 'User not found' });
