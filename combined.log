@@ -11,3 +11,55 @@
 {"level":"info","message":"User updated: 6782e1dc0acba44808de7588","timestamp":"2025-01-11T22:45:45.862Z"}
 {"level":"info","message":"User updated: 6782e1dc0acba44808de7588","timestamp":"2025-01-11T22:49:14.959Z"}
 {"level":"info","message":"User updated: 6782f9441eea042e18ec17b8","timestamp":"2025-01-11T23:06:16.824Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:13:39.304Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1","level":"error","message":"Redis error Redis connection to redis://127.0.0.1:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:39.317Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:13:39.346Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1","level":"error","message":"Redis error Redis connection to redis://127.0.0.1:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:39.534Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1","level":"error","message":"Redis error Redis connection to redis://127.0.0.1:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:39.892Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1","level":"error","message":"Redis error Redis connection to redis://127.0.0.1:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:40.519Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1","level":"error","message":"Redis error Redis connection to redis://127.0.0.1:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:41.506Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:13:48.061Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1/","level":"error","message":"Redis error Redis connection to redis://127.0.0.1/:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1/","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1/\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:48.076Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:13:48.106Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1/","level":"error","message":"Redis error Redis connection to redis://127.0.0.1/:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1/","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1/\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:48.294Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1/","level":"error","message":"Redis error Redis connection to redis://127.0.0.1/:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1/","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1/\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:48.636Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"redis://127.0.0.1/","level":"error","message":"Redis error Redis connection to redis://127.0.0.1/:6379 failed - getaddrinfo ENOTFOUND redis://127.0.0.1/","stack":"Error: getaddrinfo ENOTFOUND redis://127.0.0.1/\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)","syscall":"getaddrinfo","timestamp":"2025-01-22T18:13:49.232Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:14:08.480Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:14:08.524Z"}
+{"level":"warn","message":"Invalid token for user ID: userid","timestamp":"2025-01-22T18:15:08.686Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:17:15.131Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:17:15.165Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:17:56.179Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:19:24.129Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:19:24.162Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:19:25.898Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:41:31.901Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:41:31.934Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:41:36.943Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:43:57.468Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:44:37.588Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:47:26.970Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:49:14.582Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:49:14.655Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:49:31.890Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-22T18:50:55.673Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-22T18:50:55.715Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:51:10.217Z"}
+{"level":"warn","message":"Invalid token for user ID: id","timestamp":"2025-01-22T18:51:45.487Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T18:58:52.110Z"}
+{"level":"info","message":"User updated: 678ec41138e5773564b1f097","timestamp":"2025-01-22T19:03:25.259Z"}
+{"level":"info","message":"User updated: 67914cdb189fe15f688e3fb1","timestamp":"2025-01-22T19:54:39.995Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:08:12.264Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:08:12.281Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:15:56.954Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:15:56.980Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:16:53.462Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:16:53.489Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:19:50.487Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:19:50.525Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:20:33.023Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:20:33.050Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:25:06.162Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:25:06.193Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:27:12.621Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:27:12.650Z"}

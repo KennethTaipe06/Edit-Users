@@ -6,6 +6,9 @@ const redis = require('redis');
 const cors = require('cors');
 const winston = require('winston');
 const userRoutes = require('./routes/userRoutes');
+const { run: createUserConsumerRun } = require('./consumers/userCreateConsumer');
+const { run: loginConsumerRun } = require('./consumers/loginConsumer');
+const { run: deleteUserConsumerRun } = require('./consumers/userDeleteConsumer');
 require('dotenv').config();
 
 const app = express();
@@ -62,4 +65,7 @@ app.use('/users', userRoutes);
 
 app.listen(port, () => {
   logger.info(`Server running on port ${port}`);
+  createUserConsumerRun().catch(console.error);
+  //loginConsumerRun().catch(console.error);
+  deleteUserConsumerRun().catch(console.error);
 });

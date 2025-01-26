@@ -1,11 +1,6 @@
 const express = require('express');
-const User = require('../models/user');
-const multer = require('multer');
+const { updateUser } = require('../controllers/userController');
 const router = express.Router();
-
-// Configuración de multer para la carga de archivos en memoria
-const storage = multer.memoryStorage();
-const upload = multer({ storage: storage });
 
 /**
  * @swagger
@@ -28,7 +23,7 @@ const upload = multer({ storage: storage });
  *     requestBody:
  *       required: true
  *       content:
- *         multipart/form-data:
+ *         application/json:
  *           schema:
  *             type: object
  *             properties:
@@ -44,53 +39,20 @@ const upload = multer({ storage: storage });
  *                 type: string
  *               phone:
  *                 type: string
- *               image:
+ *               semester:
  *                 type: string
- *                 format: binary
+ *               parallel:
+ *                 type: string
+ *               career:
+ *                 type: string
+ *               description:
+ *                 type: string
  *     responses:
  *       200:
  *         description: User updated successfully
  *       404:
  *         description: User not found
  */
-router.put('/:id', upload.single('image'), async (req, res) => {
-  const { id } = req.params;
-  const { token } = req.query;
-  const { username, email, firstName, lastName, address, phone } = req.body;
-
-  try {
-    const redisClient = req.redisClient;
-    const logger = req.logger;
-    redisClient.get(id, async (err, result) => {
-      if (err) {
-        logger.error('Redis error', err);
-        return res.status(500).send(err.message);
-      }
-      if (result !== token) {
-        logger.warn(`Invalid token for user ID: ${id}`);
-        return res.status(404).json({ message: 'Invalid token' });
-      }
-
-      const updateData = { username, email, firstName, lastName, address, phone };
-      if (req.file) {
-        updateData.image = {
-          data: req.file.buffer,
-          contentType: req.file.mimetype
-        };
-      }
-
-      const user = await User.findByIdAndUpdate(id, updateData, { new: true });
-      if (!user) {
-        logger.warn(`User not found: ${id}`);
-        return res.status(404).json({ message: 'User not found' });
-      }
-      logger.info(`User updated: ${id}`);
-      res.json({ message: 'Usuario actualizado correctamente' });
-    });
-  } catch (error) {
-    req.logger.error('Error updating user', error);
-    res.status(500).json({ message: error.message });
-  }
-});
+router.put('/:id', updateUser);
 
 module.exports = router;
