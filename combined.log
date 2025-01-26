@@ -63,3 +63,36 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:25:06.193Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-01-25T23:27:12.621Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-25T23:27:12.650Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-01-26T02:37:40.611Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-26T02:37:40.637Z"}
+{"level":"info","message":"Server running on port 3011","timestamp":"2025-01-26T02:37:59.381Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-26T02:37:59.399Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T02:41:54.188Z"}
+{"level":"info","message":"Server running on port 3011","timestamp":"2025-01-26T02:48:16.379Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-26T02:48:16.408Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T02:48:33.152Z"}
+{"level":"info","message":"Server running on port 3011","timestamp":"2025-01-26T02:49:37.507Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-26T02:49:37.536Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T02:49:41.488Z"}
+{"level":"info","message":"Server running on port 3011","timestamp":"2025-01-26T02:51:37.115Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2025-01-26T02:51:37.159Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T02:51:42.349Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T02:51:42.386Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T02:59:39.279Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T02:59:39.302Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T03:00:04.363Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:00:04.373Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T03:01:27.644Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:01:27.655Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T03:02:04.024Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:02:04.032Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T03:02:25.318Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:02:25.329Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T03:06:28.866Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:06:28.876Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T03:09:54.876Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:09:54.885Z"}
+{"level":"info","message":"User updated: 6795a082f355d3ddcafa6444","timestamp":"2025-01-26T03:13:37.690Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:13:37.698Z"}
+{"level":"info","message":"User updated: 6795a912f355d3ddcafa6446","timestamp":"2025-01-26T03:17:13.921Z"}
+{"level":"info","message":"Message sent to Kafka topic: user.edit","timestamp":"2025-01-26T03:17:13.929Z"}

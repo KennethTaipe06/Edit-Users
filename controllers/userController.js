@@ -1,5 +1,6 @@
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
+const { sendMessage } = require('../producers/userProducer');
 
 const updateUser = async (req, res) => {
   const { id } = req.params;
@@ -37,6 +38,10 @@ const updateUser = async (req, res) => {
           }
           logger.info(`User updated: ${id}`);
           res.json({ message: 'Usuario actualizado correctamente' });
+
+          // Enviar mensaje cifrado con los datos del usuario
+          await sendMessage('user.edit', user);
+          logger.info(`Message sent to Kafka topic: user.edit`);
         } catch (mongoError) {
           if (mongoError.code === 11000) {
             logger.error('Duplicate key error', mongoError);

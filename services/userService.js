@@ -14,6 +14,15 @@ const decryptMessage = (encryptedMessage) => {
   return decrypted.toString();
 };
 
+const encrypt = (text) => {
+  const iv = Buffer.from(process.env.ENCRYPTION_IV, 'hex');
+  const cipher = crypto.createCipheriv('aes-256-cbc', Buffer.from(process.env.ENCRYPTION_KEY, 'hex'), iv);
+  let encrypted = cipher.update(JSON.stringify(text));
+  encrypted = Buffer.concat([encrypted, cipher.final()]);
+  return { iv: iv.toString('hex'), encryptedData: encrypted.toString('hex') };
+};
+
 module.exports = {
   decryptMessage,
+  encrypt
 };
